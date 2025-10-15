@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Лаб 4</title>
+</head>
+<body>
+<h1>Моя перша HTML-форма</h1>
+<form action="https://httpbin.org/post" method="POST">
+    <div>
+        <label for="name">Ім'я</label>
+        <input name="user_name" id="name" type="text" >
+    </div>
+    <div>
+        <label for="date">Дата народження</label>
+        <input name="user_date" id="date" type="date" >
+    </div>
+    <div>
+        <label for="email">Імейл</label>
+        <input name="user_email" id="email" type="email" >
+    </div>
+    <div>
+        <label>
+            Повідомлення
+            <textarea name="user_message"></textarea>
+        </label>
+    </div>
+    <p>Ваші улюблені напої</p>
+    <div>
+        <label>
+            Фанта
+            <input value="Фанта" name="user_drink" type="checkbox">
+        </label>
+    </div>
+    <div>
+        <label>
+            Пепсі
+            <input value="Пепсі" name="user_drink" type="checkbox">
+        </label>
+    </div>
+    <div>
+        <label>
+            Вода
+            <input value="Вода" name="user_drink" type="checkbox">
+        </label>
+    </div>
+    <p>Ваша національність</p>
+    <div>
+        <label>
+            Українець
+            <input value="Українець" name="user_national" type="radio">
+        </label>
+    </div>
+    <div>
+        <label>
+            Француз
+            <input value="Француз" name="user_national" type="radio">
+        </label>
+    </div>
+    <div>
+        <label>
+            Аргентинець
+            <input value="Аргентинець" name="user_national" type="radio">
+        </label>
+    </div>
+    <button type="submit">Надіслати</button>
+    <button type="reset">Очистити</button>
+</form>
+<picture>
+    <source srcset="https://picsum.photos/300/500" media="(max-width:468px)">
+    <img src="https://picsum.photos/1000/400" alt="">
+</picture>
+</body>
+</html>
